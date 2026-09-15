@@ -821,7 +821,576 @@
         href="https://www.wattpad.com/user/MelasiaBester"
         target="_blank"
       >
-        @MelasiaBester
+        @MelasiaBester <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book Library | Melasia Bester</title>
+
+  <meta name="description" content="Explore the book library of author Melasia Bester, including romance, fantasy, supernatural, thriller and young adult stories available on Wattpad.">
+
+  <meta name="author" content="Melasia Bester">
+
+  <link rel="canonical" href="https://melasiabester.github.io/books.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: #fff8fb;
+      color: #34252c;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 17px 7%;
+      background: rgba(24, 14, 19, 0.97);
+      border-bottom: 1px solid #e99ab9;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffc0d8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: white;
+      font-size: 12px;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    .nav-links a:hover {
+      color: #ffb3d0;
+    }
+
+    .library-hero {
+      text-align: center;
+      padding: 95px 20px 75px;
+      background:
+        radial-gradient(circle at top, #87405f 0%, #512a3c 35%, #28161f 67%, #120b0f 100%);
+      color: white;
+    }
+
+    .library-hero p {
+      color: #ffc1d8;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 14px;
+    }
+
+    .library-hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(58px, 10vw, 100px);
+      font-weight: 900;
+      color: #ffd0e1;
+      margin-bottom: 18px;
+    }
+
+    .library-hero .subtext {
+      max-width: 700px;
+      margin: auto;
+      color: #f0dde5;
+      line-height: 1.7;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      min-width: 140px;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 35px;
+      color: #ffb6d1;
+    }
+
+    .stat span {
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #ead4dd;
+    }
+
+    main {
+      padding: 75px 7%;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading p {
+      color: #c05d84;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 48px;
+      font-weight: 900;
+      color: #3d2430;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 26px;
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .book-card {
+      background: white;
+      padding: 13px;
+      border-radius: 20px;
+      box-shadow: 0 14px 35px rgba(85, 37, 57, 0.12);
+      transition: 0.3s;
+    }
+
+    .book-card:hover {
+      transform: translateY(-7px);
+    }
+
+    .book-card img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: 13px;
+      display: block;
+    }
+
+    .book-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #422532;
+      margin: 14px 4px 4px;
+    }
+
+    .book-card p {
+      color: #815d6c;
+      font-size: 13px;
+      margin: 0 4px 10px;
+      line-height: 1.5;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 0 4px 10px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #f8d5e2;
+      color: #8e3d60;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 17px;
+      margin: 4px;
+      border-radius: 30px;
+      background: #e66f9e;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background: #c95480;
+    }
+
+    .coming {
+      text-align: center;
+      margin-top: 70px;
+      padding: 50px 25px;
+      background: linear-gradient(135deg, #24141c, #4a2637);
+      border-radius: 25px;
+      color: white;
+    }
+
+    .coming h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      color: #ffc4da;
+      margin-bottom: 12px;
+    }
+
+    .coming p {
+      max-width: 650px;
+      margin: auto;
+      color: #f0dce5;
+      line-height: 1.7;
+    }
+
+    footer {
+      background: #120c0f;
+      color: #d9bac7;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 12px;
+      margin-top: 70px;
+    }
+
+    @media (max-width: 900px) {
+
+      .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      nav {
+        padding: 14px 5%;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-links {
+        gap: 9px;
+        font-size: 9px;
+      }
+
+      main {
+        padding: 60px 5%;
+      }
+
+      .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+
+      .book-card {
+        padding: 8px;
+      }
+
+      .book-card h3 {
+        font-size: 16px;
+      }
+
+      .book-card p {
+        font-size: 11px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <nav>
+
+    <div class="logo">
+      Melasia Bester
+    </div>
+
+    <div class="nav-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="index.html#books">Featured</a>
+
+      <a href="books.html">Library</a>
+
+      <a href="index.html#about">About</a>
+
+      <a href="index.html#contact">Connect</a>
+
+    </div>
+
+  </nav>
+
+
+  <header class="library-hero">
+
+    <p>The Story Collection</p>
+
+    <h1>The Library</h1>
+
+    <div class="subtext">
+      A growing collection of romance, fantasy, supernatural fiction,
+      thrillers, horror and young adult stories by Melasia Bester.
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <strong>64</strong>
+        <span>Finished Books</span>
+      </div>
+
+      <div class="stat">
+        <strong>21</strong>
+        <span>On Wattpad</span>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <div class="section-heading">
+
+      <p>Available & Featured</p>
+
+      <h2>Stories From My Worlds</h2>
+
+    </div>
+
+
+    <div class="book-grid">
+
+
+      <!-- FEATURED FRONT PAGE BOOKS -->
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2936.jpeg"
+          alt="Baby, I'm Mad by Melasia Bester"
+        >
+
+        <span class="tag">Featured</span>
+
+        <h3>Baby, I’m Mad</h3>
+
+        <p>Available on Wattpad.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2927.png"
+          alt="We Were Never Just Friends by Melasia Bester"
+        >
+
+        <span class="tag">Featured</span>
+
+        <h3>We Were Never Just Friends</h3>
+
+        <p>Available on Wattpad.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2900.jpeg"
+          alt="The Mask of Wraith by Melasia Bester"
+        >
+
+        <span class="tag">Featured</span>
+
+        <h3>The Mask of Wraith</h3>
+
+        <p>Available on Wattpad.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2757.jpeg"
+          alt="The Price of Leaving Me by Melasia Bester"
+        >
+
+        <span class="tag">Featured</span>
+
+        <h3>The Price of Leaving Me</h3>
+
+        <p>Available on Wattpad.</p>
+
+      </div>
+
+
+      <!-- NEW LIBRARY TITLES -->
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2935.jpeg"
+          alt="Ash and Bones by Melasia Bester"
+        >
+
+        <span class="tag">Wattpad</span>
+
+        <h3>Ash & Bones</h3>
+
+        <p>Part of the Melasia Bester story library.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2933.jpeg"
+          alt="The Girl From the Liquor Store by Melasia Bester"
+        >
+
+        <span class="tag">Wattpad</span>
+
+        <h3>The Girl From the Liquor Store</h3>
+
+        <p>Part of the Melasia Bester story library.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2929.jpeg"
+          alt="A Day That Should've Been Ours by Melasia Bester"
+        >
+
+        <span class="tag">Wattpad</span>
+
+        <h3>A Day That Should’ve Been Ours</h3>
+
+        <p>Part of the Melasia Bester story library.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2961.jpeg"
+          alt="The Chosen Witness by Melasia Bester"
+        >
+
+        <span class="tag">Wattpad</span>
+
+        <h3>The Chosen Witness</h3>
+
+        <p>Part of the Melasia Bester story library.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2962.jpeg"
+          alt="Broken Halo by Melasia Bester"
+        >
+
+        <span class="tag">Wattpad</span>
+
+        <h3>Broken Halo</h3>
+
+        <p>Part of the Melasia Bester story library.</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2902.jpeg"
+          alt="The Inheritance of Her by Melasia Bester"
+        >
+
+        <span class="tag">Wattpad</span>
+
+        <h3>The Inheritance of Her</h3>
+
+        <p>Part of the Melasia Bester story library.</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="coming">
+
+      <h2>More Stories Are Coming</h2>
+
+      <p>
+        This library will continue growing as more of Melasia Bester’s
+        completed books are added. With 64 finished stories and 21
+        currently on Wattpad, there are many more worlds still waiting
+        to be explored.
+      </p>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    © 2026 Melasia Bester • All Rights Reserved
+  </footer>
+
+</body>
+
+</html>
       </a>
 
     </div>
