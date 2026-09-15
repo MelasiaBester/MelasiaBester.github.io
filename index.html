@@ -3,81 +3,298 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Melasia Bester | Author</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background: #120b0d;
-      color: #f7efe8;
-      text-align: center;
+      background: #fff7fb;
+      color: #4b2434;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
     }
 
     nav {
-      padding: 20px;
-      background: #080506;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+      background: #fff0f6;
+      border-bottom: 1px solid #f1c4d7;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: #9b3d68;
     }
 
     nav a {
-      color: #f7efe8;
+      color: #4b2434;
       text-decoration: none;
-      margin: 0 15px;
-      font-family: Arial, sans-serif;
+      margin-left: 24px;
+      font-size: 15px;
     }
 
     .hero {
-      padding: 100px 20px 80px;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 90px 8%;
+      background:
+        radial-gradient(circle at top right, #ffd7e8, transparent 35%),
+        linear-gradient(135deg, #fff8fb, #f9d9e8);
     }
 
-    h1 {
-      font-size: 64px;
-      margin-bottom: 10px;
+    .hero-inner {
+      max-width: 900px;
     }
 
-    .subtitle {
-      font-size: 22px;
-      color: #c99a9f;
+    .eyebrow {
+      color: #b45a7b;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 13px;
+      font-weight: bold;
     }
 
-    .intro {
-      max-width: 700px;
-      margin: 30px auto;
-      font-size: 19px;
-      line-height: 1.7;
+    .hero h1 {
+      font-size: clamp(58px, 9vw, 105px);
+      color: #7b2d52;
+      margin: 20px 0;
+      line-height: 0.95;
+    }
+
+    .tagline {
+      max-width: 760px;
+      margin: 0 auto;
+      font-family: Georgia, serif;
+      font-size: 24px;
+      line-height: 1.6;
+    }
+
+    .stats {
+      margin: 28px 0;
+      color: #a54870;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     .button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 14px 25px;
-      background: #6d1f2b;
+      margin: 8px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: #c14f7f;
       color: white;
       text-decoration: none;
-      border-radius: 30px;
-      font-family: Arial, sans-serif;
+    }
+
+    .button.secondary {
+      background: white;
+      color: #a5426d;
+      border: 1px solid #d98dad;
     }
 
     section {
-      padding: 70px 20px;
+      padding: 85px 8%;
     }
 
-    h2 {
-      font-size: 36px;
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
     }
 
-    .genres {
-      max-width: 800px;
+    .section-title p {
+      color: #b45a7b;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+
+    .section-title h2 {
+      font-size: 48px;
+      color: #7c2f54;
+      margin: 8px 0;
+    }
+
+    .genre-grid {
+      max-width: 1050px;
       margin: auto;
-      line-height: 2;
-      font-size: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    .genre {
+      background: white;
+      border: 1px solid #f0cad9;
+      border-radius: 20px;
+      padding: 28px 18px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(133, 50, 86, 0.07);
+    }
+
+    .genre h3 {
+      color: #9d3b66;
+      margin: 0;
+    }
+
+    .featured {
+      background: #fdeaf2;
+    }
+
+    .book-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .book {
+      background: white;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(114, 39, 75, 0.10);
+    }
+
+    .cover-placeholder {
+      height: 285px;
+      background: linear-gradient(145deg, #7d2d52, #e592b2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-family: Georgia, serif;
+      font-size: 26px;
+    }
+
+    .book-info {
+      padding: 22px;
+    }
+
+    .book-info h3 {
+      margin: 0 0 10px;
+      color: #7d2f54;
+    }
+
+    .book-info p {
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .series-box {
+      max-width: 900px;
+      margin: auto;
+      background: #7c2f54;
+      color: white;
+      border-radius: 30px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .series-box h2 {
+      font-size: 42px;
+      margin-top: 0;
+    }
+
+    .about {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .photo-placeholder {
+      min-height: 470px;
+      border-radius: 30px;
+      background: linear-gradient(160deg, #f2bdd1, #a4426f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 30px;
+      font-family: Georgia, serif;
+      font-size: 25px;
+    }
+
+    .about h2 {
+      color: #7c2f54;
+      font-size: 50px;
+      margin: 0 0 20px;
+    }
+
+    .about p {
+      line-height: 1.9;
+      font-size: 17px;
+    }
+
+    .contact {
+      background: #f8cade;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #762a50;
+      font-size: 48px;
+    }
+
+    .contact p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      line-height: 1.8;
     }
 
     footer {
-      padding: 30px;
-      background: #080506;
-      font-family: Arial, sans-serif;
+      background: #4f1830;
+      color: white;
+      padding: 35px;
+      text-align: center;
       font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-placeholder {
+        min-height: 330px;
+      }
     }
   </style>
 </head>
@@ -85,52 +302,198 @@
 <body>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#books">Books</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">Melasia Bester</div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#books">Books</a>
+      <a href="#series">Series</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <div class="hero" id="home">
-    <p class="subtitle">AUTHOR • STORYTELLER • WORLD BUILDER</p>
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <div class="eyebrow">Author • Storyteller • World Builder</div>
 
-    <h1>Melasia Bester</h1>
+      <h1>Melasia Bester</h1>
 
-    <p class="intro">
-      Stories that refuse to stay in one world.
-      From romance and grief to fantasy, horror, royalty,
-      obsession and the supernatural, every story begins somewhere different.
-    </p>
+      <p class="tagline">
+        Stories that refuse to stay in one world.
+        Romance, fantasy, horror, mystery, grief, obsession,
+        royalty and everything in between.
+      </p>
 
-    <a class="button" href="#books">Explore My Books</a>
-  </div>
+      <div class="stats">
+        64+ STORIES • MULTIPLE GENRES • ONE AUTHOR
+      </div>
 
-  <section id="books">
-    <h2>Explore My Worlds</h2>
+      <a class="button" href="#books">Explore My Books</a>
+      <a class="button secondary" href="#about">Meet Melasia</a>
+    </div>
+  </header>
 
-    <div class="genres">
-      Romance • Fantasy • Horror • Paranormal • Thriller • Mystery •
-      Young Adult • Historical Fiction • LGBTQ+ Fiction • Speculative Fiction
+  <section>
+    <div class="section-title">
+      <p>Choose your world</p>
+      <h2>Explore by Genre</h2>
+    </div>
+
+    <div class="genre-grid">
+      <div class="genre"><h3>Romance</h3></div>
+      <div class="genre"><h3>Fantasy</h3></div>
+      <div class="genre"><h3>Horror</h3></div>
+      <div class="genre"><h3>Thriller & Mystery</h3></div>
+      <div class="genre"><h3>Paranormal</h3></div>
+      <div class="genre"><h3>Young Adult</h3></div>
+      <div class="genre"><h3>LGBTQ+ Fiction</h3></div>
+      <div class="genre"><h3>Historical</h3></div>
+      <div class="genre"><h3>Speculative</h3></div>
+      <div class="genre"><h3>Drama</h3></div>
+    </div>
+  </section>
+
+  <section class="featured" id="books">
+    <div class="section-title">
+      <p>Start here</p>
+      <h2>Featured Stories</h2>
+    </div>
+
+    <div class="book-grid">
+
+      <article class="book">
+        <div class="cover-placeholder">The Price of Leaving Me</div>
+        <div class="book-info">
+          <h3>The Price of Leaving Me</h3>
+          <p>
+            A woman revisits a once-in-a-lifetime love while confronting
+            heartbreak, memory and self-worth.
+          </p>
+        </div>
+      </article>
+
+      <article class="book">
+        <div class="cover-placeholder">The Blooming Hour</div>
+        <div class="book-info">
+          <h3>The Blooming Hour</h3>
+          <p>
+            Lesbian vampires travel from town to town while building
+            a hidden all-women community.
+          </p>
+        </div>
+      </article>
+
+      <article class="book">
+        <div class="cover-placeholder">Tides of Eighteen</div>
+        <div class="book-info">
+          <h3>Tides of Eighteen</h3>
+          <p>
+            Naia navigates love, politics and inheritance
+            in an underwater world.
+          </p>
+        </div>
+      </article>
+
+      <article class="book">
+        <div class="cover-placeholder">Something Wearing Her Face</div>
+        <div class="book-info">
+          <h3>Something Wearing Her Face</h3>
+          <p>
+            Raina faces something impossible:
+            a being wearing her own face.
+          </p>
+        </div>
+      </article>
+
+      <article class="book">
+        <div class="cover-placeholder">Crowns and Blades</div>
+        <div class="book-info">
+          <h3>Crowns and Blades</h3>
+          <p>
+            A princess weaponizes loyalty, desire and spectacle
+            to seize a brutal throne.
+          </p>
+        </div>
+      </article>
+
+      <article class="book">
+        <div class="cover-placeholder">Where the Cameras Don't Reach</div>
+        <div class="book-info">
+          <h3>Where the Cameras Don't Reach</h3>
+          <p>
+            Arielle uncovers the hidden reality behind
+            her former modeling agency.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="series">
+    <div class="series-box">
+      <p class="eyebrow" style="color:#ffd1e3;">Connected worlds</p>
+
+      <h2>Series</h2>
+
+      <p>
+        Some stories don't end with one book.
+        Explore connected worlds including
+        <strong>Tides of Eighteen</strong>,
+        <strong>Waves of Twenty-One</strong>,
+        and <strong>Tsunami Beneath the Queen</strong>,
+        along with the generational curse series beginning with
+        <strong>What Was Taken From Her</strong>.
+      </p>
     </div>
   </section>
 
   <section id="about">
-    <h2>About Melasia</h2>
+    <div class="about">
 
-    <p class="intro">
-      Melasia Bester is a multi-genre author creating stories about love,
-      identity, power, grief, survival and the worlds people build for themselves.
-      Her growing library spans more than sixty original stories across multiple genres.
-    </p>
+      <div class="photo-placeholder">
+        Your author photo will go here
+      </div>
+
+      <div>
+        <p class="eyebrow">About the author</p>
+
+        <h2>Melasia Bester</h2>
+
+        <p>
+          Melasia Bester is a multi-genre storyteller whose work explores
+          love, identity, grief, power, survival and the complicated worlds
+          people create for themselves.
+        </p>
+
+        <p>
+          Her growing library spans more than sixty original stories,
+          moving freely between romance, fantasy, horror, thrillers,
+          young adult fiction, supernatural stories and more.
+        </p>
+
+        <a class="button" href="#contact">Connect With Me</a>
+      </div>
+
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Stay Connected</h2>
-    <p>More books, releases and author updates coming soon.</p>
+  <section class="contact" id="contact">
+    <h2>Stay in My World</h2>
+
+    <p>
+      Follow along for new stories, upcoming releases,
+      writing updates and a growing library of worlds.
+    </p>
+
+    <a class="button" href="#">Instagram</a>
+    <a class="button" href="#">TikTok</a>
+    <a class="button" href="#">Wattpad</a>
   </section>
 
   <footer>
-    © 2026 Melasia Bester. All rights reserved.
+    © 2026 Melasia Bester • All Rights Reserved
   </footer>
 
 </body>
