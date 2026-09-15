@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Melasia Bester | Author</title>
+
+  <meta name="description"
+        content="Meet author Melasia Bester, a multi-genre storyteller with 67 completed books and 29 stories currently available on Wattpad.">
+
+  <meta name="author" content="Melasia Bester">
+
+  <link rel="canonical" href="https://melasiabester.github.io/about.html">
+
+  <meta property="og:title" content="About Melasia Bester">
+  <meta property="og:description" content="Learn more about Melasia Bester, why she writes, and the bigger vision behind the books.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://melasiabester.github.io/about.html">
+  <meta property="og:image" content="https://melasiabester.github.io/IMG_3192.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: #fff8fb;
+      color: #34252c;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 17px 7%;
+      background: rgba(24, 14, 19, 0.97);
+      border-bottom: 1px solid #e99ab9;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffc0d8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: white;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+    }
+
+    .nav-links a:hover {
+      color: #ffb3d0;
+    }
+
+    .hero {
+      padding: 95px 20px 80px;
+      text-align: center;
+      color: white;
+      background:
+        radial-gradient(circle at top,
+          #87405f 0%,
+          #512a3c 35%,
+          #28161f 67%,
+          #120b0f 100%);
+    }
+
+    .hero .eyebrow {
+      color: #ffc0d8;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(55px, 10vw, 100px);
+      font-weight: 900;
+      color: #ffd0e1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #f1dfe6;
+      font-size: 17px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: #1a1015;
+      color: white;
+      text-align: center;
+      padding: 32px 7%;
+    }
+
+    .stat {
+      padding: 10px;
+      border-right: 1px solid #674151;
+    }
+
+    .stat:last-child {
+      border-right: none;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      color: #ffb8d3;
+    }
+
+    .stat span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ead2dc;
+    }
+
+    section {
+      padding: 80px 7%;
+    }
+
+    .section-wrap {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-label {
+      color: #c05d84;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 5vw, 58px);
+      color: #432532;
+      margin-bottom: 22px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .photo-frame {
+      position: relative;
+      max-width: 430px;
+      margin: auto;
+    }
+
+    .photo-frame::before {
+      content: "";
+      position: absolute;
+      inset: 18px -18px -18px 18px;
+      background: #efb2ca;
+      border-radius: 28px;
+      z-index: 0;
+    }
+
+    .author-photo {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      display: block;
+      border-radius: 28px;
+      object-fit: cover;
+    }
+
+    .copy p {
+      margin-bottom: 18px;
+      color: #654a56;
+      font-size: 16px;
+    }
+
+    .soft-section {
+      background: #fff0f6;
+    }
+
+    .dark-section {
+      background: linear-gradient(135deg, #1b1016, #402131);
+      color: white;
+    }
+
+    .dark-section h2 {
+      color: #ffc4da;
+    }
+
+    .dark-section .section-label {
+      color: #f0a4c1;
+    }
+
+    .dark-section .copy p {
+      color: #efdce4;
+    }
+
+    .quote-box {
+      margin-top: 32px;
+      padding: 28px;
+      border-left: 4px solid #e66f9e;
+      background: rgba(255,255,255,0.06);
+      border-radius: 0 18px 18px 0;
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      color: #ffd5e4;
+    }
+
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .vision-card {
+      background: white;
+      padding: 28px;
+      border-radius: 22px;
+      box-shadow: 0 14px 35px rgba(86, 39, 58, 0.12);
+    }
+
+    .vision-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      color: #442633;
+      margin-bottom: 10px;
+    }
+
+    .vision-card p {
+      color: #765764;
+      font-size: 14px;
+    }
+
+    .closing {
+      text-align: center;
+      background: #f9d8e5;
+      border-radius: 28px;
+      padding: 60px 30px;
+    }
+
+    .closing h2 {
+      margin-bottom: 16px;
+    }
+
+    .closing p {
+      max-width: 760px;
+      margin: 0 auto 18px;
+      color: #6c4d59;
+      font-size: 16px;
+    }
+
+    .final-line {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 900;
+      color: #4b2938;
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 24px;
+      margin: 8px;
+      border-radius: 50px;
+      background: #e66f9e;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .button:hover {
+      background: #c95480;
+    }
+
+    footer {
+      background: #120c0f;
+      color: #d9bac7;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .vision-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 14px 5%;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-links {
+        gap: 9px;
+        font-size: 9px;
+        letter-spacing: 0.7px;
+      }
+
+      .stats {
+        padding: 26px 3%;
+      }
+
+      .stat strong {
+        font-size: 29px;
+      }
+
+      .stat span {
+        font-size: 9px;
+        letter-spacing: 1px;
+      }
+
+      section {
+        padding: 60px 5%;
+      }
+
+      .quote-box {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Melasia Bester</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="books.html">Library</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Connect</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">Author • Dreamer • Builder</div>
+  <h1>Meet Melasia</h1>
+
+  <p>
+    A multi-genre storyteller building a life around creativity,
+    independence, imagination, and the belief that one person does not
+    have to fit into only one dream.
+  </p>
+</header>
+
+<div class="stats">
+  <div class="stat">
+    <strong>67</strong>
+    <span>Finished Books</span>
+  </div>
+
+  <div class="stat">
+    <strong>29</strong>
+    <span>On Wattpad</span>
+  </div>
+
+  <div class="stat">
+    <strong>38</strong>
+    <span>More to Release</span>
+  </div>
+</div>
+
+<section>
+  <div class="section-wrap intro-grid">
+
+    <div class="photo-frame">
+      <img
+        src="IMG_3192.jpeg"
+        alt="Author Melasia Bester"
+        class="author-photo"
+      >
+    </div>
+
+    <div class="copy">
+      <div class="section-label">Meet the Author</div>
+      <h2>Melasia Bester</h2>
+
+      <p>
+        Melasia Bester is a 21-year-old multi-genre author and storyteller
+        with 67 completed books and 29 stories currently available on Wattpad.
+        Her work moves across romance, fantasy, horror, thrillers,
+        supernatural fiction, young adult stories, comedy, historical fiction,
+        and everything in between.
+      </p>
+
+      <p>
+        She writes for readers who want to feel something. Her stories explore
+        love, grief, identity, power, survival, obsession, complicated
+        relationships, and the strange worlds people create for themselves.
+      </p>
+
+      <p>
+        No two stories are exactly alike, but they all come from the same
+        place: a love of emotion, unpredictability, and creating the kind of
+        stories she wants to read herself.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="soft-section">
+  <div class="section-wrap">
+
+    <div class="section-label">A Little About Me</div>
+    <h2>More Than the Books</h2>
+
+    <div class="copy">
+      <p>
+        Melasia is someone who feels deeply, dreams big, and almost always has
+        another idea waiting in her head.
+      </p>
+
+      <p>
+        Outside of writing, she loves anime, music, tattoos, fashion, creative
+        design, and building ideas from scratch. She can go from thinking about
+        a fantasy kingdom to planning a business concept to talking about
+        nursing school in the same day.
+      </p>
+
+      <p>
+        She loves beautiful things, dark things, emotional things, and anything
+        with a strong story behind it. Her creativity does not stay in one
+        lane, and neither does her vision for her future.
+      </p>
+
+      <p>
+        At the center of everything she does is a desire to build a life that
+        feels fully her own: creative, independent, meaningful, and bigger
+        than one career or one dream.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="dark-section">
+  <div class="section-wrap">
+
+    <div class="section-label">Why I Write</div>
+    <h2>Stories for Every Mood</h2>
+
+    <div class="copy">
+
+      <p>
+        I’ve lived through grief, heartbreak, trauma, and a lot of different
+        emotions. Sometimes you want to read something that matches exactly
+        where your head and heart are, but I kept finding myself disappointed
+        by endings, frustrated by certain choices, or predicting the entire
+        story before I got there.
+      </p>
+
+      <p>
+        So I started writing the versions I wanted to read.
+      </p>
+
+      <p>
+        At first, they were just ideas. I would start stories and leave them
+        unfinished. Then someone I used to know told me I never finished
+        anything and called me a wannabe author.
+      </p>
+
+      <p>
+        That stayed with me.
+      </p>
+
+      <p>
+        Not because they were right, but because I decided I wanted proof for
+        myself.
+      </p>
+
+      <p>
+        I started finishing the stories. One became another, and another,
+        until writing stopped being something I wanted to do and became
+        something I had actually built.
+      </p>
+
+      <p>
+        Now I write because I want readers to find a story for every mood.
+        Something romantic, painful, strange, dark, comforting, unsettling,
+        funny, or completely unexpected.
+      </p>
+
+      <p>
+        I want the ending to make you feel something, even if it isn’t what
+        you thought you wanted.
+      </p>
+
+    </div>
+
+    <div class="quote-box">
+      I don’t write to stay in one genre. I write to create the story I wish
+      existed when I went looking for it.
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-wrap">
+
+    <div class="section-label">Beyond the Books</div>
+    <h2>The Bigger Vision</h2>
+
+    <div class="copy">
+
+      <p>
+        Writing is only one part of Melasia Bester’s long-term vision.
+      </p>
+
+      <p>
+        While continuing to grow as an author, she is focused on finishing
+        school and pursuing a career in nursing, building the stability and
+        independence that will help support everything she wants to create
+        later.
+      </p>
+
+      <p>
+        Her future plans include real estate and hospitality, beginning with
+        an investment property and Airbnb. From there, she hopes to build a
+        larger entertainment concept: a multi-level space combining themed
+        food, nightlife, books, merchandise, and community.
+      </p>
+
+      <p>
+        One of her biggest creative goals extends beyond publishing. Melasia
+        plans to build an independent, Black-owned animation company with her
+        brother, creating original animated projects from scratch while also
+        exploring opportunities for selected stories from her catalog to
+        become film, television, or other screen projects.
+      </p>
+
+      <p>
+        Every part of the plan connects back to the same idea: build something
+        lasting, own the work, and create spaces where imagination can become
+        something real.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="soft-section">
+  <div class="section-wrap">
+
+    <div class="section-label">The Vision</div>
+    <h2>What I’m Building Toward</h2>
+
+    <div class="vision-grid">
+
+      <div class="vision-card">
+        <h3>Nursing & Stability</h3>
+        <p>
+          Finish school, build a career in nursing, and create the financial
+          foundation for the larger dreams.
+        </p>
+      </div>
+
+      <div class="vision-card">
+        <h3>Real Estate & Hospitality</h3>
+        <p>
+          Invest in property, build an Airbnb income stream, and eventually
+          expand into larger hospitality concepts.
+        </p>
+      </div>
+
+      <div class="vision-card">
+        <h3>Creative Spaces</h3>
+        <p>
+          Create a themed entertainment destination that brings together food,
+          nightlife, books, merchandise, and community.
+        </p>
+      </div>
+
+      <div class="vision-card">
+        <h3>Animation, Film & Original IP</h3>
+        <p>
+          Build an independent animation company, create original projects,
+          and develop selected stories for screen adaptations.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-wrap closing">
+
+    <div class="section-label">A Growing Story</div>
+    <h2>This Is Only the Beginning</h2>
+
+    <p>
+      There are 67 completed books, 29 stories already available to readers,
+      more releases coming, a growing author platform, and bigger dreams still
+      ahead.
+    </p>
+
+    <div class="final-line">
+      The goal is not to fit into one category.<br>
+      The goal is to build a life big enough for every dream in it.
+    </div>
+
+    <div style="margin-top: 28px;">
+      <a class="button" href="books.html">Explore the Library</a>
+      <a class="button" href="index.html#contact">Connect With Me</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Melasia Bester • All Rights Reserved
+</footer>
+
+</body>
+</html>
