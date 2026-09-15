@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Library | Melasia Bester</title>
+
+  <meta name="description" content="Explore the book library of author Melasia Bester, including 29 stories currently available on Wattpad.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: #fff8fb;
+      color: #34252c;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 17px 7%;
+      background: #180e13;
+      border-bottom: 1px solid #e99ab9;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffc0d8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: white;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+    }
+
+    .hero {
+      padding: 90px 20px 70px;
+      text-align: center;
+      background: radial-gradient(circle at top, #87405f 0%, #512a3c 35%, #28161f 67%, #120b0f 100%);
+      color: white;
+    }
+
+    .hero p {
+      color: #ffc1d8;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(55px, 9vw, 95px);
+      font-weight: 900;
+      color: #ffd0e1;
+      margin-bottom: 18px;
+    }
+
+    .hero .sub {
+      max-width: 720px;
+      margin: auto;
+      line-height: 1.7;
+      color: #f2dfe7;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      color: #ffb6d1;
+    }
+
+    .stat span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    main {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 46px;
+      color: #3f2532;
+    }
+
+    .section-title p {
+      color: #b65f80;
+      margin-top: 8px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .book-card {
+      background: white;
+      border-radius: 20px;
+      padding: 12px;
+      box-shadow: 0 14px 35px rgba(85, 37, 57, 0.12);
+    }
+
+    .book-card img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: 13px;
+      display: block;
+    }
+
+    .book-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      margin: 12px 4px 4px;
+      color: #442633;
+    }
+
+    .book-card p {
+      margin: 0 4px 8px;
+      color: #815d6c;
+      font-size: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 4px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #f8d5e2;
+      color: #8e3d60;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .trilogy {
+      margin-top: 70px;
+    }
+
+    .trilogy-box {
+      background: linear-gradient(135deg, #1f1118, #472637);
+      border-radius: 25px;
+      padding: 45px 25px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: white;
+    }
+
+    .trilogy-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 42px;
+      color: #ffc4da;
+      margin-bottom: 10px;
+    }
+
+    .trilogy-box p {
+      color: #ead8e1;
+    }
+
+    footer {
+      margin-top: 70px;
+      background: #120c0f;
+      color: #d9bac7;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 14px 5%;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-links {
+        gap: 9px;
+        font-size: 9px;
+      }
+
+      main {
+        padding: 60px 5%;
+      }
+
+      .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+
+      .book-card {
+        padding: 8px;
+      }
+
+      .book-card h3 {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Melasia Bester</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#books">Featured</a>
+    <a href="books.html">Library</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Connect</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <p>The Story Collection</p>
+  <h1>The Library</h1>
+
+  <div class="sub">
+    Explore the growing story world of Melasia Bester — romance, fantasy,
+    horror, thrillers, supernatural fiction, young adult stories and more.
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>67</strong>
+      <span>Finished Books</span>
+    </div>
+
+    <div class="stat">
+      <strong>29</strong>
+      <span>On Wattpad</span>
+    </div>
+
+    <div class="stat">
+      <strong>38</strong>
+      <span>More to Release</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="section-title">
+    <h2>Available on Wattpad</h2>
+    <p>29 stories already waiting for readers.</p>
+  </div>
+
+  <div class="book-grid">
+
+    <div class="book-card">
+      <img src="IMG_2936.jpeg" alt="Baby I'm Mad">
+      <span class="tag">Featured</span>
+      <h3>Baby, I’m Mad</h3>
+      <p>Available on Wattpad</p>
+    </div>
+
+    <div class="book-card">
+      <img src="IMG_2927.png" alt="We Were Never Just Friends">
+      <span class="tag">Featured</span>
+      <h3>We Were Never Just Friends</h3>
+      <p>Available on Wattpad</p>
+    </div>
+
+    <div class="book-card">
+      <img src="IMG_2900.jpeg" alt="The Mask of Wraith">
+      <span class="tag">Featured</span>
+      <h3>The Mask of Wraith</h3>
+      <p>Available on Wattpad</p>
+    </div>
+
+    <div class="book-card">
+      <img src="IMG_2757.jpeg" alt="The Price of Leaving Me">
+      <span class="tag">Featured</span>
+      <h3>The Price of Leaving Me</h3>
+      <p>Available on Wattpad</p>
+    </div>
+
+    <div class="book-card">
+      <h3>How Deep Is Your Love</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Be Mean to Me</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Cost of Curiosity</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Where the Cameras Don’t Reach</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Black Queen</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Diamond Throne</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Baby, Tell Me How You Hate Me</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Without</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Inheritance of Her</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>A Day That Should’ve Been Ours</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Ash & Bones</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>What’s Left</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Girl From the Liquor Store</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Chosen Witness</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Broken Halo</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Something Wearing Her Face</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>I Told You So</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Dear Diary, I’m Not Who I Thought I Was</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Blooming Hour</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>He Loved Me Better on Stage</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>The Quiet State</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+    <div class="book-card">
+      <h3>Addicted to the Night</h3>
+      <p>Cover will appear after upload</p>
+    </div>
+
+  </div>
+
+  <div class="trilogy">
+
+    <div class="trilogy-box">
+      <h2>The Tides Trilogy</h2>
+      <p>
+        Tides of Eighteen • Waves of Twenty-One • Tsunami Beneath the Queen
+      </p>
+    </div>
+
+    <div class="book-grid">
+
+      <div class="book-card">
+        <h3>Tides of Eighteen</h3>
+        <p>Book One</p>
+      </div>
+
+      <div class="book-card">
+        <h3>Waves of Twenty-One</h3>
+        <p>Book Two</p>
+      </div>
+
+      <div class="book-card">
+        <h3>Tsunami Beneath the Queen</h3>
+        <p>Book Three</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Melasia Bester • All Rights Reserved
+</footer>
+
+</body>
+</html>
