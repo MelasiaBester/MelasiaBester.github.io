@@ -7,6 +7,11 @@
 
   <title>Melasia Bester | Author</title>
 
+  <!-- Cute fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -19,9 +24,9 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Montserrat", sans-serif;
       background: #fff8fb;
-      color: #2b2026;
+      color: #33242b;
       line-height: 1.6;
     }
 
@@ -30,6 +35,8 @@
       color: inherit;
     }
 
+    /* NAVIGATION */
+
     nav {
       position: sticky;
       top: 0;
@@ -37,30 +44,32 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 18px 8%;
-      background: rgba(20, 13, 17, 0.96);
+      padding: 17px 7%;
+      background: rgba(24, 15, 20, 0.96);
       color: white;
-      border-bottom: 1px solid #e88ab0;
+      border-bottom: 1px solid #ec9fbd;
     }
 
     .logo {
-      font-family: Georgia, serif;
-      font-size: 24px;
-      font-weight: bold;
-      color: #ffc1d9;
+      font-family: "Great Vibes", cursive;
+      font-size: 34px;
+      color: #ffc4dc;
+      font-weight: normal;
     }
 
     .nav-links {
       display: flex;
-      gap: 25px;
-      font-size: 14px;
+      gap: 24px;
+      font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
     }
 
     .nav-links a:hover {
-      color: #ff9fc5;
+      color: #ffb2ce;
     }
+
+    /* HERO */
 
     .hero {
       min-height: 90vh;
@@ -68,55 +77,69 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 70px 20px;
+      padding: 80px 20px;
       background:
-        radial-gradient(circle at top, #722f4e 0%, #2a1721 43%, #100b0e 100%);
+        radial-gradient(circle at top, #8a3d61 0%, #4c2638 34%, #211319 68%, #100a0d 100%);
       color: white;
     }
 
     .hero-inner {
-      max-width: 850px;
+      max-width: 900px;
     }
 
     .eyebrow {
-      color: #ffb3d1;
+      color: #ffbfd8;
       text-transform: uppercase;
       letter-spacing: 4px;
-      font-size: 13px;
+      font-size: 12px;
       margin-bottom: 20px;
     }
 
-    .hero h1 {
-      font-family: Georgia, serif;
-      font-size: clamp(52px, 9vw, 100px);
-      line-height: 1;
-      margin-bottom: 20px;
+    .hero-name {
+      margin-bottom: 18px;
+      line-height: 0.9;
     }
 
-    .hero h1 span {
-      color: #ffaccd;
+    .hero-name .first-name {
+      display: block;
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(90px, 15vw, 160px);
+      font-weight: normal;
+      color: #ffc1d9;
+      text-shadow: 0 8px 30px rgba(255, 170, 205, 0.22);
+    }
+
+    .hero-name .last-name {
+      display: block;
+      font-family: "DM Serif Display", serif;
+      font-size: clamp(48px, 8vw, 85px);
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      color: #ffffff;
     }
 
     .hero p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      font-size: 18px;
-      color: #f7e8ee;
+      max-width: 680px;
+      margin: 25px auto 30px;
+      font-size: 17px;
+      color: #f5e5ec;
     }
 
     .button {
       display: inline-block;
-      padding: 13px 25px;
+      padding: 13px 24px;
       margin: 7px;
       border-radius: 50px;
-      background: #e76c9e;
+      background: #e66f9e;
       color: white;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 14px;
       transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(157, 57, 96, 0.16);
     }
 
     .button:hover {
-      background: #c95081;
+      background: #c95480;
       transform: translateY(-2px);
     }
 
@@ -125,8 +148,10 @@
       border: 1px solid #ffb3d1;
     }
 
+    /* MAIN SECTIONS */
+
     section {
-      padding: 85px 8%;
+      padding: 85px 7%;
     }
 
     .section-heading {
@@ -135,37 +160,40 @@
     }
 
     .section-heading p {
-      color: #bd5c85;
+      color: #c45f88;
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: 12px;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
 
     .section-heading h2 {
-      font-family: Georgia, serif;
-      font-size: 42px;
-      color: #271820;
+      font-family: "DM Serif Display", serif;
+      font-size: 46px;
+      color: #351f29;
+      font-weight: normal;
     }
 
+    /* BOOKS */
+
     #books {
-      background: #fff;
+      background: #fffafd;
     }
 
     .book-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 25px;
+      gap: 26px;
       max-width: 1200px;
       margin: auto;
     }
 
     .book-card {
-      background: #fff7fa;
-      border-radius: 18px;
-      padding: 15px;
-      box-shadow: 0 12px 30px rgba(75, 28, 49, 0.12);
-      transition: 0.3s;
+      background: #fff4f8;
+      padding: 14px;
+      border-radius: 20px;
+      box-shadow: 0 14px 35px rgba(82, 35, 55, 0.12);
+      transition: 0.3s ease;
     }
 
     .book-card:hover {
@@ -176,107 +204,155 @@
       width: 100%;
       aspect-ratio: 2 / 3;
       object-fit: cover;
-      border-radius: 12px;
+      border-radius: 13px;
       display: block;
     }
 
     .book-card h3 {
-      font-family: Georgia, serif;
-      font-size: 20px;
-      margin-top: 15px;
-      color: #371e2a;
+      font-family: "DM Serif Display", serif;
+      font-size: 21px;
+      font-weight: normal;
+      margin: 15px 5px 2px;
+      color: #442634;
     }
 
     .book-card p {
-      color: #775564;
-      font-size: 14px;
-      margin-top: 5px;
+      margin: 0 5px 8px;
+      color: #815d6d;
+      font-size: 13px;
     }
 
+    /* WRITING SECTION */
+
     .writing-section {
-      background: #211219;
+      background:
+        linear-gradient(135deg, #1b1016, #3d1f2d);
       color: white;
       text-align: center;
     }
 
     .writing-section h2 {
-      font-family: Georgia, serif;
-      font-size: 42px;
-      margin-bottom: 18px;
-      color: #ffc0d8;
+      font-family: "DM Serif Display", serif;
+      font-size: 46px;
+      font-weight: normal;
+      color: #ffc3da;
+      margin-bottom: 17px;
     }
 
     .writing-section p {
       max-width: 760px;
       margin: auto;
-      color: #efdce4;
-      font-size: 17px;
+      color: #f1dfe7;
+      font-size: 16px;
+    }
+
+    /* ABOUT */
+
+    #about {
+      background: #fff;
     }
 
     .about {
       display: grid;
       grid-template-columns: 0.8fr 1.2fr;
-      gap: 55px;
+      gap: 60px;
       max-width: 1100px;
       margin: auto;
       align-items: center;
     }
 
-    .author-photo {
-      width: 100%;
+    .photo-frame {
+      position: relative;
       max-width: 430px;
-      border-radius: 25px;
-      box-shadow: 18px 18px 0 #f4bad0;
-      display: block;
       margin: auto;
     }
 
+    .photo-frame::before {
+      content: "";
+      position: absolute;
+      inset: 18px -18px -18px 18px;
+      background: #f2b7cd;
+      border-radius: 28px;
+      z-index: 0;
+    }
+
+    .author-photo {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      border-radius: 28px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .about-text .small-title {
+      color: #c65e87;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+
     .about-text h2 {
-      font-family: Georgia, serif;
-      font-size: 48px;
-      margin: 8px 0 18px;
+      font-family: "Great Vibes", cursive;
+      font-size: 68px;
+      font-weight: normal;
+      color: #4c2938;
+      margin: 5px 0 15px;
+      line-height: 1;
     }
 
     .about-text p {
-      margin-bottom: 18px;
-      color: #60444f;
+      margin-bottom: 17px;
+      color: #664b57;
+      font-size: 15px;
     }
 
+    /* SOCIALS */
+
     .contact {
-      background: linear-gradient(135deg, #f8cadd, #fff2f7);
+      background:
+        linear-gradient(135deg, #f8ccdc, #fff7fa);
       text-align: center;
     }
 
     .contact h2 {
-      font-family: Georgia, serif;
-      font-size: 45px;
-      margin-bottom: 15px;
+      font-family: "Great Vibes", cursive;
+      font-size: 70px;
+      font-weight: normal;
+      color: #542c3d;
+      margin-bottom: 5px;
     }
 
-    .contact p {
+    .contact > p {
       max-width: 650px;
-      margin: 0 auto 25px;
-      color: #644651;
+      margin: 0 auto 30px;
+      color: #745563;
     }
 
-    .social-group {
-      margin-top: 25px;
+    .social-box {
+      max-width: 900px;
+      margin: auto;
     }
 
-    .social-label {
-      font-family: Georgia, serif;
-      font-size: 23px;
-      margin: 25px 0 10px;
-      color: #38212c;
+    .social-title {
+      font-family: "DM Serif Display", serif;
+      font-size: 22px;
+      font-weight: normal;
+      color: #4d2a39;
+      margin: 25px 0 8px;
     }
+
+    /* FOOTER */
 
     footer {
       background: #120c0f;
-      color: #dcbecb;
+      color: #d9bac7;
       text-align: center;
-      padding: 30px 20px;
-      font-size: 13px;
+      padding: 28px 20px;
+      font-size: 12px;
     }
+
+    /* TABLET */
 
     @media (max-width: 900px) {
       .book-grid {
@@ -286,116 +362,200 @@
       .about {
         grid-template-columns: 1fr;
       }
+
+      .photo-frame {
+        max-width: 390px;
+      }
     }
+
+    /* PHONE */
 
     @media (max-width: 600px) {
       nav {
-        padding: 15px 5%;
+        padding: 14px 5%;
+      }
+
+      .logo {
+        font-size: 27px;
       }
 
       .nav-links {
         gap: 12px;
-        font-size: 11px;
-      }
-
-      .logo {
-        font-size: 18px;
+        font-size: 10px;
+        letter-spacing: 1px;
       }
 
       section {
-        padding: 65px 6%;
+        padding: 65px 5%;
+      }
+
+      .hero {
+        min-height: 85vh;
+      }
+
+      .hero-name .first-name {
+        font-size: 85px;
+      }
+
+      .hero-name .last-name {
+        font-size: 38px;
+        letter-spacing: 4px;
       }
 
       .book-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 14px;
       }
 
       .book-card {
-        padding: 9px;
+        padding: 8px;
       }
 
       .book-card h3 {
         font-size: 16px;
       }
 
-      .hero p {
-        font-size: 16px;
+      .book-card p {
+        font-size: 11px;
+      }
+
+      .about-text h2,
+      .contact h2 {
+        font-size: 58px;
       }
     }
   </style>
 </head>
 
+
 <body>
 
+  <!-- NAVIGATION -->
+
   <nav>
-    <div class="logo">Melasia Bester</div>
+
+    <div class="logo">
+      Melasia Bester
+    </div>
 
     <div class="nav-links">
       <a href="#books">Books</a>
       <a href="#about">About</a>
       <a href="#contact">Connect</a>
     </div>
+
   </nav>
 
 
+  <!-- HERO -->
+
   <header class="hero">
+
     <div class="hero-inner">
 
-      <div class="eyebrow">Author • Storyteller • World Builder</div>
+      <div class="eyebrow">
+        Author • Storyteller • World Builder
+      </div>
 
-      <h1>
-        Melasia <span>Bester</span>
-      </h1>
+      <div class="hero-name">
+        <span class="first-name">Melasia</span>
+        <span class="last-name">Bester</span>
+      </div>
 
       <p>
         Stories about love, grief, power, survival, obsession,
         fantasy and the complicated worlds people create for themselves.
       </p>
 
-      <a class="button" href="#books">Explore My Books</a>
-      <a class="button button-outline" href="#about">Meet the Author</a>
+      <a class="button" href="#books">
+        Explore My Books
+      </a>
+
+      <a class="button button-outline" href="#about">
+        Meet the Author
+      </a>
 
     </div>
+
   </header>
 
+
+  <!-- BOOKS -->
 
   <section id="books">
 
     <div class="section-heading">
+
       <p>Enter the worlds</p>
+
       <h2>Featured Books</h2>
+
     </div>
+
 
     <div class="book-grid">
 
       <div class="book-card">
-        <img src="IMG_3006.jpeg" alt="Book cover">
+
+        <img
+          src="IMG_2936.jpeg"
+          alt="Book cover by Melasia Bester"
+        >
+
         <h3>Featured Story</h3>
+
         <p>Written by Melasia Bester</p>
+
       </div>
 
-      <div class="book-card">
-        <img src="IMG_3007.jpeg" alt="Book cover">
-        <h3>Featured Story</h3>
-        <p>Written by Melasia Bester</p>
-      </div>
 
       <div class="book-card">
-        <img src="IMG_3008.jpeg" alt="Book cover">
+
+        <img
+          src="IMG_2927.png"
+          alt="Book cover by Melasia Bester"
+        >
+
         <h3>Featured Story</h3>
+
         <p>Written by Melasia Bester</p>
+
       </div>
 
+
       <div class="book-card">
-        <img src="IMG_3009.jpeg" alt="Book cover">
+
+        <img
+          src="IMG_2900.jpeg"
+          alt="Book cover by Melasia Bester"
+        >
+
         <h3>Featured Story</h3>
+
         <p>Written by Melasia Bester</p>
+
+      </div>
+
+
+      <div class="book-card">
+
+        <img
+          src="IMG_2758.jpeg"
+          alt="Book cover by Melasia Bester"
+        >
+
+        <h3>Featured Story</h3>
+
+        <p>Written by Melasia Bester</p>
+
       </div>
 
     </div>
+
   </section>
 
+
+  <!-- GENRES -->
 
   <section class="writing-section">
 
@@ -404,25 +564,38 @@
     <p>
       Romance. Fantasy. Horror. Thrillers. Young adult fiction.
       Supernatural stories and everything in between.
-      Every story is its own world — and there is always another world waiting.
+      Every story is its own world — and there is always
+      another world waiting.
     </p>
 
   </section>
 
 
+  <!-- ABOUT -->
+
   <section id="about">
 
     <div class="about">
 
-      <img
-        src="IMG_3192.jpeg"
-        alt="Melasia Bester"
-        class="author-photo"
-      >
+
+      <!-- REAL AUTHOR PHOTO -->
+
+      <div class="photo-frame">
+
+        <img
+          src="IMG_3192.jpeg"
+          alt="Melasia Bester"
+          class="author-photo"
+        >
+
+      </div>
+
 
       <div class="about-text">
 
-        <div class="eyebrow">About the Author</div>
+        <div class="small-title">
+          About the Author
+        </div>
 
         <h2>Melasia Bester</h2>
 
@@ -433,8 +606,8 @@
         </p>
 
         <p>
-          Her growing library spans romance, fantasy, horror, thrillers,
-          young adult fiction and supernatural stories.
+          Her growing library spans romance, fantasy, horror,
+          thrillers, young adult fiction and supernatural stories.
         </p>
 
         <p>
@@ -443,7 +616,9 @@
           make the reader feel something.
         </p>
 
-        <a class="button" href="#contact">Connect With Me</a>
+        <a class="button" href="#contact">
+          Connect With Me
+        </a>
 
       </div>
 
@@ -451,6 +626,8 @@
 
   </section>
 
+
+  <!-- SOCIAL MEDIA -->
 
   <section class="contact" id="contact">
 
@@ -461,52 +638,82 @@
       writing updates and a growing library of worlds.
     </p>
 
-    <div class="social-group">
 
-      <div class="social-label">Instagram</div>
+    <div class="social-box">
 
-      <a class="button"
-         href="https://www.instagram.com/lasialay2/"
-         target="_blank">
+
+      <!-- INSTAGRAM -->
+
+      <div class="social-title">
+        Instagram
+      </div>
+
+      <a
+        class="button"
+        href="https://www.instagram.com/lasialay2/"
+        target="_blank"
+      >
         @lasialay2
       </a>
 
-      <a class="button"
-         href="https://www.instagram.com/layjohnson90/"
-         target="_blank">
+      <a
+        class="button"
+        href="https://www.instagram.com/layjohnson90/"
+        target="_blank"
+      >
         @layjohnson90
       </a>
 
 
-      <div class="social-label">Facebook</div>
+      <!-- FACEBOOK -->
 
-      <a class="button"
-         href="https://www.facebook.com/search/top?q=Lasia%20Shiesty"
-         target="_blank">
+      <div class="social-title">
+        Facebook
+      </div>
+
+      <a
+        class="button"
+        href="https://www.facebook.com/search/top?q=Lasia%20Shiesty"
+        target="_blank"
+      >
         Lasia Shiesty
       </a>
 
-      <a class="button"
-         href="https://www.facebook.com/search/top?q=Lay%20Johnson"
-         target="_blank">
+      <a
+        class="button"
+        href="https://www.facebook.com/search/top?q=Lay%20Johnson"
+        target="_blank"
+      >
         Lay Johnson
       </a>
 
 
-      <div class="social-label">TikTok</div>
+      <!-- TIKTOK -->
 
-      <a class="button"
-         href="https://www.tiktok.com/@ichikababyLay_7"
-         target="_blank">
+      <div class="social-title">
+        TikTok
+      </div>
+
+      <a
+        class="button"
+        href="https://www.tiktok.com/@ichikababyLay_7"
+        target="_blank"
+      >
         @ichikababyLay_7
       </a>
 
 
-      <div class="social-label">Wattpad</div>
+      <!-- WATTPAD -->
 
-      <a class="button"
-         href="https://www.wattpad.com/user/MelasiaBester"
-         target="_blank">
+      <div class="social-title">
+        Wattpad
+      </div>
+
+      <a
+        class="button"
+        href="https://www.wattpad.com/user/MelasiaBester"
+        target="_blank"
+      >
         @MelasiaBester
       </a>
 
@@ -520,4 +727,5 @@
   </footer>
 
 </body>
+
 </html>
