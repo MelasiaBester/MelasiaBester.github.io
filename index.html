@@ -7,6 +7,23 @@
 
   <title>Melasia Bester | Author</title>
 
+  <!-- GOOGLE / SEO -->
+  <meta name="description" content="Official website of author Melasia Bester. Explore romance, fantasy, horror, thriller, supernatural and young adult fiction, including 64 completed books and 21 stories available on Wattpad.">
+
+  <meta name="author" content="Melasia Bester">
+
+  <meta name="keywords" content="Melasia Bester, Melasia Bester author, Wattpad author, romance author, fantasy author, Black author, Baby I'm Mad, We Were Never Just Friends, The Mask of Wraith, The Price of Leaving Me">
+
+  <link rel="canonical" href="https://melasiabester.github.io/">
+
+  <!-- SOCIAL / GOOGLE PREVIEW -->
+  <meta property="og:title" content="Melasia Bester | Author">
+  <meta property="og:description" content="64 finished books. 21 stories on Wattpad. Enter the worlds of author Melasia Bester.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://melasiabester.github.io/">
+  <meta property="og:image" content="https://melasiabester.github.io/IMG_3192.jpeg">
+
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -14,6 +31,24 @@
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap"
     rel="stylesheet"
   >
+
+  <!-- GOOGLE STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Melasia Bester",
+    "url": "https://melasiabester.github.io/",
+    "jobTitle": "Author",
+    "description": "Multi-genre author of romance, fantasy, horror, thrillers, supernatural fiction and young adult stories.",
+    "sameAs": [
+      "https://www.instagram.com/lasialay2/",
+      "https://www.instagram.com/layjohnson90/",
+      "https://www.tiktok.com/@ichikababyLay_7",
+      "https://www.wattpad.com/user/MelasiaBester"
+    ]
+  }
+  </script>
 
   <style>
 
@@ -39,7 +74,7 @@
       color: inherit;
     }
 
-    /* NAVIGATION */
+    /* NAV */
 
     nav {
       position: sticky;
@@ -56,16 +91,16 @@
     .logo {
       font-family: "Playfair Display", serif;
       font-size: 28px;
-      font-weight: 800;
+      font-weight: 900;
       color: #ffc0d8;
     }
 
     .nav-links {
       display: flex;
-      gap: 25px;
+      gap: 22px;
       color: white;
-      font-size: 13px;
-      letter-spacing: 1.5px;
+      font-size: 12px;
+      letter-spacing: 1.4px;
       text-transform: uppercase;
     }
 
@@ -108,6 +143,7 @@
       line-height: 0.95;
       letter-spacing: -2px;
       color: #ffd0e1;
+
       text-shadow:
         0 4px 0 rgba(89, 34, 57, 0.45),
         0 12px 35px rgba(255, 145, 190, 0.18);
@@ -144,6 +180,41 @@
     .button-outline {
       background: transparent;
       border: 1px solid #ffb4d0;
+    }
+
+    /* STATS */
+
+    .stats {
+      background: #1a1015;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      padding: 35px 7%;
+      color: white;
+    }
+
+    .stat {
+      padding: 10px;
+      border-right: 1px solid #674151;
+    }
+
+    .stat:last-child {
+      border-right: none;
+    }
+
+    .stat-number {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      font-weight: 900;
+      color: #ffb8d3;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ead2dc;
     }
 
     /* SECTIONS */
@@ -220,6 +291,11 @@
       margin: 0 5px 7px;
     }
 
+    .library-button-area {
+      text-align: center;
+      margin-top: 38px;
+    }
+
     /* GENRES */
 
     .writing-section {
@@ -246,7 +322,7 @@
     /* ABOUT */
 
     #about {
-      background: #ffffff;
+      background: white;
     }
 
     .about {
@@ -337,8 +413,6 @@
       margin: 25px 0 8px;
     }
 
-    /* FOOTER */
-
     footer {
       background: #120c0f;
       color: #d9bac7;
@@ -359,10 +433,6 @@
         grid-template-columns: 1fr;
       }
 
-      .photo-frame {
-        max-width: 390px;
-      }
-
     }
 
     /* PHONE */
@@ -374,25 +444,34 @@
       }
 
       .logo {
-        font-size: 22px;
+        font-size: 20px;
       }
 
       .nav-links {
-        gap: 11px;
-        font-size: 10px;
+        gap: 9px;
+        font-size: 9px;
+        letter-spacing: 0.7px;
+      }
+
+      .hero-name {
+        font-size: 58px;
+      }
+
+      .stats {
+        padding: 28px 3%;
+      }
+
+      .stat-number {
+        font-size: 29px;
+      }
+
+      .stat-label {
+        font-size: 9px;
         letter-spacing: 1px;
       }
 
       section {
         padding: 65px 5%;
-      }
-
-      .hero {
-        min-height: 85vh;
-      }
-
-      .hero-name {
-        font-size: 58px;
       }
 
       .book-grid {
@@ -435,7 +514,11 @@
 
     <div class="nav-links">
 
+      <a href="/">Home</a>
+
       <a href="#books">Books</a>
+
+      <a href="books.html">Library</a>
 
       <a href="#about">About</a>
 
@@ -478,13 +561,35 @@
   </header>
 
 
-  <!-- BOOKS -->
+  <!-- AUTHOR STATS -->
+
+  <div class="stats">
+
+    <div class="stat">
+      <span class="stat-number">64</span>
+      <span class="stat-label">Finished Books</span>
+    </div>
+
+    <div class="stat">
+      <span class="stat-number">21</span>
+      <span class="stat-label">On Wattpad</span>
+    </div>
+
+    <div class="stat">
+      <span class="stat-number">∞</span>
+      <span class="stat-label">Worlds to Enter</span>
+    </div>
+
+  </div>
+
+
+  <!-- FEATURED BOOKS -->
 
   <section id="books">
 
     <div class="section-heading">
 
-      <p>Enter the worlds</p>
+      <p>Start Here</p>
 
       <h2>Featured Books</h2>
 
@@ -493,14 +598,15 @@
 
     <div class="book-grid">
 
+
       <div class="book-card">
 
         <img
           src="IMG_2936.jpeg"
-          alt="Book cover by Melasia Bester"
+          alt="Baby, I'm Mad by Melasia Bester"
         >
 
-        <h3>Featured Story</h3>
+        <h3>Baby, I’m Mad</h3>
 
         <p>Written by Melasia Bester</p>
 
@@ -511,10 +617,10 @@
 
         <img
           src="IMG_2927.png"
-          alt="Book cover by Melasia Bester"
+          alt="We Were Never Just Friends by Melasia Bester"
         >
 
-        <h3>Featured Story</h3>
+        <h3>We Were Never Just Friends</h3>
 
         <p>Written by Melasia Bester</p>
 
@@ -525,10 +631,10 @@
 
         <img
           src="IMG_2900.jpeg"
-          alt="Book cover by Melasia Bester"
+          alt="The Mask of Wraith by Melasia Bester"
         >
 
-        <h3>Featured Story</h3>
+        <h3>The Mask of Wraith</h3>
 
         <p>Written by Melasia Bester</p>
 
@@ -539,14 +645,23 @@
 
         <img
           src="IMG_2757.jpeg"
-          alt="Book cover by Melasia Bester"
+          alt="The Price of Leaving Me by Melasia Bester"
         >
 
-        <h3>Featured Story</h3>
+        <h3>The Price of Leaving Me</h3>
 
         <p>Written by Melasia Bester</p>
 
       </div>
+
+    </div>
+
+
+    <div class="library-button-area">
+
+      <a class="button" href="books.html">
+        Explore My Library →
+      </a>
 
     </div>
 
@@ -557,13 +672,13 @@
 
   <section class="writing-section">
 
-    <h2>More Than One Genre.</h2>
+    <h2>64 Stories. Countless Worlds.</h2>
 
     <p>
       Romance. Fantasy. Horror. Thrillers. Young adult fiction.
       Supernatural stories and everything in between.
-      Every story is its own world — and there is always
-      another world waiting.
+      Twenty-one stories are currently available on Wattpad,
+      with an even larger completed library waiting behind them.
     </p>
 
   </section>
@@ -582,7 +697,7 @@
 
         <img
           src="IMG_3192.jpeg"
-          alt="Melasia Bester"
+          alt="Author Melasia Bester"
           class="author-photo"
         >
 
@@ -604,11 +719,13 @@
         </p>
 
         <p>
-          Her growing library spans romance, fantasy, horror,
-          thrillers, young adult fiction and supernatural stories.
+          With 64 completed books, her growing library spans romance,
+          fantasy, horror, thrillers, young adult fiction and
+          supernatural stories.
         </p>
 
         <p>
+          Twenty-one of her stories are currently available on Wattpad.
           From dangerous love stories to fantasy kingdoms and haunting
           supernatural worlds, every project begins with one goal:
           make the reader feel something.
@@ -625,15 +742,15 @@
   </section>
 
 
-  <!-- SOCIAL MEDIA -->
+  <!-- SOCIALS -->
 
   <section class="contact" id="contact">
 
     <h2>Stay in My World</h2>
 
     <p>
-      Follow along for new stories, upcoming releases,
-      writing updates and a growing library of worlds.
+      Follow along for new stories, writing updates,
+      upcoming releases and more worlds from Melasia Bester.
     </p>
 
 
@@ -717,5 +834,4 @@
   </footer>
 
 </body>
-
 </html>
