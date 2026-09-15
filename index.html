@@ -7,12 +7,16 @@
 
   <title>Melasia Bester | Author</title>
 
-  <!-- Cute fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -26,7 +30,7 @@
     body {
       font-family: "Montserrat", sans-serif;
       background: #fff8fb;
-      color: #33242b;
+      color: #34252c;
       line-height: 1.6;
     }
 
@@ -45,28 +49,28 @@
       justify-content: space-between;
       align-items: center;
       padding: 17px 7%;
-      background: rgba(24, 15, 20, 0.96);
-      color: white;
-      border-bottom: 1px solid #ec9fbd;
+      background: rgba(24, 14, 19, 0.97);
+      border-bottom: 1px solid #e99ab9;
     }
 
     .logo {
-      font-family: "Great Vibes", cursive;
-      font-size: 34px;
-      color: #ffc4dc;
-      font-weight: normal;
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffc0d8;
     }
 
     .nav-links {
       display: flex;
-      gap: 24px;
+      gap: 25px;
+      color: white;
       font-size: 13px;
-      text-transform: uppercase;
       letter-spacing: 1.5px;
+      text-transform: uppercase;
     }
 
     .nav-links a:hover {
-      color: #ffb2ce;
+      color: #ffb3d0;
     }
 
     /* HERO */
@@ -78,17 +82,19 @@
       justify-content: center;
       text-align: center;
       padding: 80px 20px;
+
       background:
-        radial-gradient(circle at top, #8a3d61 0%, #4c2638 34%, #211319 68%, #100a0d 100%);
+        radial-gradient(circle at top, #87405f 0%, #512a3c 35%, #28161f 67%, #120b0f 100%);
+
       color: white;
     }
 
     .hero-inner {
-      max-width: 900px;
+      max-width: 950px;
     }
 
     .eyebrow {
-      color: #ffbfd8;
+      color: #ffc0d8;
       text-transform: uppercase;
       letter-spacing: 4px;
       font-size: 12px;
@@ -96,33 +102,26 @@
     }
 
     .hero-name {
-      margin-bottom: 18px;
-      line-height: 0.9;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(58px, 10vw, 110px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -2px;
+      color: #ffd0e1;
+      text-shadow:
+        0 4px 0 rgba(89, 34, 57, 0.45),
+        0 12px 35px rgba(255, 145, 190, 0.18);
     }
 
-    .hero-name .first-name {
-      display: block;
-      font-family: "Great Vibes", cursive;
-      font-size: clamp(90px, 15vw, 160px);
-      font-weight: normal;
-      color: #ffc1d9;
-      text-shadow: 0 8px 30px rgba(255, 170, 205, 0.22);
-    }
-
-    .hero-name .last-name {
-      display: block;
-      font-family: "DM Serif Display", serif;
-      font-size: clamp(48px, 8vw, 85px);
-      letter-spacing: 7px;
-      text-transform: uppercase;
-      color: #ffffff;
+    .hero-name span {
+      color: white;
     }
 
     .hero p {
-      max-width: 680px;
-      margin: 25px auto 30px;
+      max-width: 700px;
+      margin: 28px auto 30px;
       font-size: 17px;
-      color: #f5e5ec;
+      color: #f4e5eb;
     }
 
     .button {
@@ -135,7 +134,6 @@
       font-weight: 600;
       font-size: 14px;
       transition: 0.3s;
-      box-shadow: 0 8px 20px rgba(157, 57, 96, 0.16);
     }
 
     .button:hover {
@@ -145,10 +143,10 @@
 
     .button-outline {
       background: transparent;
-      border: 1px solid #ffb3d1;
+      border: 1px solid #ffb4d0;
     }
 
-    /* MAIN SECTIONS */
+    /* SECTIONS */
 
     section {
       padding: 85px 7%;
@@ -160,18 +158,18 @@
     }
 
     .section-heading p {
-      color: #c45f88;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+      color: #c05d84;
       font-size: 12px;
-      margin-bottom: 7px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     .section-heading h2 {
-      font-family: "DM Serif Display", serif;
-      font-size: 46px;
-      color: #351f29;
-      font-weight: normal;
+      font-family: "Playfair Display", serif;
+      font-size: 48px;
+      font-weight: 800;
+      color: #3c2330;
     }
 
     /* BOOKS */
@@ -183,73 +181,72 @@
     .book-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 26px;
+      gap: 25px;
       max-width: 1200px;
       margin: auto;
     }
 
     .book-card {
-      background: #fff4f8;
-      padding: 14px;
+      background: #fff3f8;
       border-radius: 20px;
-      box-shadow: 0 14px 35px rgba(82, 35, 55, 0.12);
-      transition: 0.3s ease;
+      padding: 14px;
+      box-shadow: 0 14px 35px rgba(86, 39, 58, 0.12);
+      transition: 0.3s;
     }
 
     .book-card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-7px);
     }
 
     .book-card img {
       width: 100%;
       aspect-ratio: 2 / 3;
       object-fit: cover;
-      border-radius: 13px;
+      border-radius: 14px;
       display: block;
     }
 
     .book-card h3 {
-      font-family: "DM Serif Display", serif;
-      font-size: 21px;
-      font-weight: normal;
-      margin: 15px 5px 2px;
-      color: #442634;
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 14px 5px 3px;
+      color: #442633;
     }
 
     .book-card p {
-      margin: 0 5px 8px;
-      color: #815d6d;
+      color: #7e5d6a;
       font-size: 13px;
+      margin: 0 5px 7px;
     }
 
-    /* WRITING SECTION */
+    /* GENRES */
 
     .writing-section {
-      background:
-        linear-gradient(135deg, #1b1016, #3d1f2d);
+      background: linear-gradient(135deg, #1b1016, #402131);
       color: white;
       text-align: center;
     }
 
     .writing-section h2 {
-      font-family: "DM Serif Display", serif;
+      font-family: "Playfair Display", serif;
       font-size: 46px;
-      font-weight: normal;
-      color: #ffc3da;
-      margin-bottom: 17px;
+      font-weight: 800;
+      color: #ffc4da;
+      margin-bottom: 18px;
     }
 
     .writing-section p {
       max-width: 760px;
       margin: auto;
-      color: #f1dfe7;
+      color: #efdce4;
       font-size: 16px;
     }
 
     /* ABOUT */
 
     #about {
-      background: #fff;
+      background: #ffffff;
     }
 
     .about {
@@ -271,7 +268,7 @@
       content: "";
       position: absolute;
       inset: 18px -18px -18px 18px;
-      background: #f2b7cd;
+      background: #efb2ca;
       border-radius: 28px;
       z-index: 0;
     }
@@ -280,25 +277,24 @@
       position: relative;
       z-index: 1;
       width: 100%;
-      border-radius: 28px;
       display: block;
+      border-radius: 28px;
       object-fit: cover;
     }
 
     .about-text .small-title {
-      color: #c65e87;
+      color: #c55f87;
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: 12px;
     }
 
     .about-text h2 {
-      font-family: "Great Vibes", cursive;
-      font-size: 68px;
-      font-weight: normal;
-      color: #4c2938;
-      margin: 5px 0 15px;
-      line-height: 1;
+      font-family: "Playfair Display", serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: #462735;
+      margin: 7px 0 18px;
     }
 
     .about-text p {
@@ -310,23 +306,22 @@
     /* SOCIALS */
 
     .contact {
-      background:
-        linear-gradient(135deg, #f8ccdc, #fff7fa);
+      background: linear-gradient(135deg, #f8ccdc, #fff7fa);
       text-align: center;
     }
 
     .contact h2 {
-      font-family: "Great Vibes", cursive;
-      font-size: 70px;
-      font-weight: normal;
-      color: #542c3d;
-      margin-bottom: 5px;
+      font-family: "Playfair Display", serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: #4f2b3a;
+      margin-bottom: 8px;
     }
 
     .contact > p {
       max-width: 650px;
       margin: 0 auto 30px;
-      color: #745563;
+      color: #755764;
     }
 
     .social-box {
@@ -335,10 +330,10 @@
     }
 
     .social-title {
-      font-family: "DM Serif Display", serif;
+      font-family: "Playfair Display", serif;
       font-size: 22px;
-      font-weight: normal;
-      color: #4d2a39;
+      font-weight: 800;
+      color: #4d2938;
       margin: 25px 0 8px;
     }
 
@@ -355,6 +350,7 @@
     /* TABLET */
 
     @media (max-width: 900px) {
+
       .book-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -366,21 +362,23 @@
       .photo-frame {
         max-width: 390px;
       }
+
     }
 
     /* PHONE */
 
     @media (max-width: 600px) {
+
       nav {
         padding: 14px 5%;
       }
 
       .logo {
-        font-size: 27px;
+        font-size: 22px;
       }
 
       .nav-links {
-        gap: 12px;
+        gap: 11px;
         font-size: 10px;
         letter-spacing: 1px;
       }
@@ -393,13 +391,8 @@
         min-height: 85vh;
       }
 
-      .hero-name .first-name {
-        font-size: 85px;
-      }
-
-      .hero-name .last-name {
-        font-size: 38px;
-        letter-spacing: 4px;
+      .hero-name {
+        font-size: 58px;
       }
 
       .book-grid {
@@ -421,9 +414,11 @@
 
       .about-text h2,
       .contact h2 {
-        font-size: 58px;
+        font-size: 44px;
       }
+
     }
+
   </style>
 </head>
 
@@ -439,9 +434,13 @@
     </div>
 
     <div class="nav-links">
+
       <a href="#books">Books</a>
+
       <a href="#about">About</a>
+
       <a href="#contact">Connect</a>
+
     </div>
 
   </nav>
@@ -458,8 +457,7 @@
       </div>
 
       <div class="hero-name">
-        <span class="first-name">Melasia</span>
-        <span class="last-name">Bester</span>
+        Melasia <span>Bester</span>
       </div>
 
       <p>
@@ -540,7 +538,7 @@
       <div class="book-card">
 
         <img
-          src="IMG_2758.jpeg"
+          src="IMG_2757.jpeg"
           alt="Book cover by Melasia Bester"
         >
 
@@ -642,8 +640,6 @@
     <div class="social-box">
 
 
-      <!-- INSTAGRAM -->
-
       <div class="social-title">
         Instagram
       </div>
@@ -664,8 +660,6 @@
         @layjohnson90
       </a>
 
-
-      <!-- FACEBOOK -->
 
       <div class="social-title">
         Facebook
@@ -688,8 +682,6 @@
       </a>
 
 
-      <!-- TIKTOK -->
-
       <div class="social-title">
         TikTok
       </div>
@@ -702,8 +694,6 @@
         @ichikababyLay_7
       </a>
 
-
-      <!-- WATTPAD -->
 
       <div class="social-title">
         Wattpad
